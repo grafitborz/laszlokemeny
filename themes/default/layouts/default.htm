@@ -1,0 +1,102 @@
+==
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Kemény László graphic designer, front end developer</title>
+  	<meta name="format-detection" content="telephone=yes"/>
+  	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta charset="utf-8"/>
+  	<meta name="description" content="Kemény László graphic designer, front end developer" />
+  	<meta property="og:title" content="Kemény László graphic designer, front end developer" />
+  	<meta property="og:description" content="Kemény László graphic designer, front end developer" />
+  	<meta property="og:url" content="https://laszlokemeny.com" />
+  	<meta property="og:site_name" content="Kemény László graphic designer, front end developer" />
+
+
+
+    <link href="{{ [
+      'assets/css/style.css'
+    ]|theme }}" rel="stylesheet">
+
+
+
+
+<meta name="google-site-verification" content="sBBQukCMAhkAEA7ioaYuN2r7kZChmxA1dAmCI1buEZ0" />
+  </head>
+ <body  data-spy="scroll" data-target="#navbarToggleExternalContent"  data-offset="50">
+
+
+    {% page %}
+
+
+    <script src="{{ [
+      'assets/vendor/jquery/dist/jquery.min.js',
+      'assets/vendor/tether/dist/js/tether.min.js',
+      'assets/vendor/bootstrap/dist/js/bootstrap.min.js',
+      'assets/vendor/wow/dist/wow.min.js',
+      'assets/vendor/holderjs/holder.min.js',
+      'assets/vendor/plyr/dist/plyr.js',
+      'assets/js/scripts.js'
+
+    ]|theme }}"></script>
+    
+
+	<script>
+		// Add scrollspy to <body>
+		$('body').scrollspy({target: ".navbar", offset: 50});
+
+		// Add smooth scrolling on all links inside the navbar
+		$(".nav-item a").on('click', function(event) {
+
+		  // Make sure this.hash has a value before overriding default behavior
+		  if (this.hash !== "") {
+
+		    // Prevent default anchor click behavior
+		    event.preventDefault();
+
+		    // Store hash
+		    var hash = this.hash;
+
+		    // Using jQuery's animate() method to add smooth page scroll
+		    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		    $('html, body').animate({
+		      scrollTop: $(hash).offset().top
+		    }, 800, function(){
+
+		    // Add hash (#) to URL when done scrolling (default click behavior)
+		      window.location.hash = hash;
+		    });
+
+		  } // End if
+
+		});
+		</script>
+		<noscript id="deferred-styles">
+        <link href="{{ [
+		  'https://fonts.googleapis.com/css?family=Lato',
+        'assets/vendor/plyr/dist/plyr.css',
+		'assets/vendor/font-awesome/css/font-awesome.css',
+		'assets/vendor/animate.css/animate.min.css',
+		'https://fonts.googleapis.com/css?family=Lato'
+
+      ]|theme }}" rel="stylesheet">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+.MyNavbar	{position: absolute; right: 0;}
+.myNavbar-toggler	{ right:10px; top: 10px; z-index: 1; border: none; outline: none}
+.myNavbar-toggler:focus, .myNavbar-toggler:active	{outline: none;}
+#navbarToggleExternalContent, #navbarToggleExternalContent.show	{top: 0;position: absolute;width: 100%;}
+#navbarToggleExternalContent .bg-dark	{background-color: rgba(0,0,0,0.8) !important;}

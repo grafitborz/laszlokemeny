@@ -1,0 +1,33 @@
+<div class="fixed-top">
+    <nav class="navbar MyNavbar navbar-dark">
+        <button class="navbar-toggler myNavbar-toggler position-absolute" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="collapse" data-toggle="collapse" data-target="#navbarToggleExternalContent" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class="nav justify-content-around">
+                <li class="nav-item {% if this.page.id == 'new' %}active{% endif %}">
+                    <a class="nav-link smooth-scroll {% if this.page.id == 'new' %}active{% endif %}" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#works">Works</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+{% put scripts %}
+<script>
+</script>
+{% endput %}
